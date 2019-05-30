@@ -31,7 +31,7 @@ public class MyUI extends UI {
         dateField.setResolution(DateResolution.MONTH);
         
         Button button = new Button("Set range");
-        button.addClickListener(e -> dateField.setRangeStart(LocalDate.now()));
+        button.addClickListener(e -> dateField.setRangeStart(LocalDate.of(2018, 1, 1)));
         
         layout.addComponents(dateField, button);
         
